@@ -1,0 +1,14 @@
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./app.conf:/etc/nginx/conf.d/app.conf
+      - ./logs:/var/log/nginx
+    depends_on:
+      - app
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
