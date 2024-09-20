@@ -1,0 +1,8 @@
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./vercel.conf:/etc/nginx/conf.d/app.conf
+      - ./logs:/var/log/nginx

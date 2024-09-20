@@ -13,6 +13,22 @@ const domains: Record<string, { name: string; description: string }> = {
     name: "Example",
     description: "This is an example domain 2",
   },
+  "example1.eliasjr.dev": {
+    name: "Example",
+    description: "This is an example domain 1",
+  },
+  "example2.eliasjr.dev": {
+    name: "Example",
+    description: "This is an example domain 2",
+  },
+  "example1.cycle-dev.com": {
+    name: "Example",
+    description: "This is an example domain 1",
+  },
+  "example2.cycle-dev.com": {
+    name: "Example",
+    description: "This is an example domain 2",
+  },
 };
 
 const DomainPage = ({ params }: DomainPageProps) => {

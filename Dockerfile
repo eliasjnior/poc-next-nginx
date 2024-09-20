@@ -1,4 +1,4 @@
-FROM node:20 as base
+FROM node:20 AS base
 RUN corepack enable pnpm
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
